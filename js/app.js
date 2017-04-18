@@ -11,6 +11,7 @@ beginSearchButton.addEventListener('click', () => {
 const displayImages = (imageObjects) => {
   for (let i = 0; i < imageObjects.images.length; i++) {
     let imageDiv = document.createElement('div');
+    imageDiv.className = 'imageDivs';
 
     let imageTag = document.createElement('img');
     imageTag.setAttribute('src', imageObjects.images[i].display_sizes[0].uri);
